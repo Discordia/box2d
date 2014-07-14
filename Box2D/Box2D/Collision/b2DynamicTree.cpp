@@ -18,6 +18,7 @@
 
 #include <Box2D/Collision/b2DynamicTree.h>
 #include <memory.h>
+#include <cstring>
 
 b2DynamicTree::b2DynamicTree()
 {
@@ -453,7 +454,7 @@ int32 b2DynamicTree::Balance(int32 iA)
 
 		return iC;
 	}
-	
+
 	// Rotate B up
 	if (balance < -1)
 	{
